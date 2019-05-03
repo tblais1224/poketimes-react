@@ -1,7 +1,12 @@
 import React from 'react'
 
 
-const Contact = () => {
+const Contact = (props) => {
+    //programmatic redirect
+    setTimeout(() => {
+        props.history.push('/about');
+    }, 2000)
+    
     return (
         <div className="App container">
             <h4 className="center">Contact</h4>
