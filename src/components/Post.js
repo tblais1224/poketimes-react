@@ -19,6 +19,10 @@ class Post extends Component {
 
         const post = this.state.post ? (
             <div className="post">
+                <img src={this.state.post.sprites.front_default} alt=""/>
+                <img src={this.state.post.sprites.back_default} alt=""/>
+                <img src={this.state.post.sprites.front_shiny} alt=""/>
+                <img src={this.state.post.sprites.back_shiny} alt=""/>
                 <h4 className="center">{this.state.post.name}</h4>
                 <h5>Type:</h5>
                 {this.state.post.types.map((type, index) => { return <p key={index}>{type.type.name}</p> ;})}
