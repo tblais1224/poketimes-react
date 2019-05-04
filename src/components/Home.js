@@ -13,7 +13,7 @@ class Home extends Component {
             .then((res) => {
                 console.log(res)
                 this.setState({
-                    posts: res.data.results.slice(0, 25)
+                    posts: res.data.results.slice(0, 20)
                 })
             })
     }
