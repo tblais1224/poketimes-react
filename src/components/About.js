@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Rainbow from '../hoc/Rainbow'
 
 const About = () => {
     return (
@@ -74,4 +74,5 @@ Po-ke-mon!</p>
     )
 }
 
-export default About;
+//wrap the About and call wrappedComponent in Rainbow.js
+export default Rainbow(About);
